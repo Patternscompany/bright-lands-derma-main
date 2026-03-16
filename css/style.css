@@ -56,6 +56,10 @@ section {
   display: block;
 }
 
+.hair .row {
+  border-bottom: 1px solid #BE2A4B;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
