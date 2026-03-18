@@ -216,18 +216,18 @@
         <div class="col-lg-5 animate__animated animate__fadeInRight">
           <div class="form-container">
             <h3>Book Free Consultation</h3>
-            <form id="adsForm">
+            <form id="adsForm" action="" method="POST">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your Email" required>
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Your Phone Number" required>
+                <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number" required>
               </div>
               <div class="form-group">
-                <select class="form-control" required>
+                <select class="form-control" name="service" required>
                   <option value="">Select Service</option>
                   <option value="Skin Care">Skin Care</option>
                   <option value="Hair Treatment">Hair Treatment</option>
