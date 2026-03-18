@@ -12238,13 +12238,17 @@ img {
 }
 
 .footer .btn-lg-square i {
-  color: #000 !important;
+  color: #fff;
   font-size: 18px;
 }
 
 .footer .btn-lg-square:hover {
   background: #fff;
   transform: translateY(-4px);
+}
+
+.footer .btn-lg-square:hover i {
+  color: #BE2A4B !important;
 }
 
 .footer-address {
