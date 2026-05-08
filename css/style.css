@@ -12043,7 +12043,7 @@ li.drop-down:hover .drop-items {
 }
 
 .doctor img:hover {
-  transform: rotate(360deg);
+  /* transform: rotate(360deg); */
 }
 
 .about-img,
@@ -12664,4 +12664,119 @@ img {
 
 .plus-drop {
   float: left;
+}
+
+.doctors-section {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.doctors-section .d {
+  gap: 3rem;
+}
+
+.doctors-heading {
+  color: #BE2A4B;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.doctors-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #BE2A4B;
+}
+
+.doctor-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(190, 42, 75, 0.05);
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(190, 42, 75, 0.12);
+  border-color: rgba(190, 42, 75, 0.2);
+}
+
+.doctor-img-container {
+  width: 100%;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.doctor-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+.doctor-card:hover img {
+  transform: scale(1.05);
+}
+
+.doctor-info {
+  padding: 30px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doctor-name {
+  color: #333;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.doctor-qual {
+  color: #666;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.doctor-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #BE2A4B, transparent);
+  width: 60%;
+  margin: 0 auto 15px;
+  opacity: 0.4;
+}
+
+.doctor-title {
+  color: #BE2A4B;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.doctor-special {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .doctor-card {
+    max-width: 380px;
+    margin: 0 auto;
+  }
 }
